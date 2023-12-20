@@ -1,0 +1,25 @@
+@media (min-width: 455px){
+    main{
+        height: 100vh;
+    }
+}
+@media (min-width: 900px){
+    .hidden{
+        display: block;
+    }
+    main{
+        height: 100vh;
+        background-image: url(../media/img/background-pathologyc.jpg);
+        background-position: center;
+    }
+
+    #history{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 25px;
+        height: 100vh;
+    }
+    #history #content-history{
+        max-width: 80%;
+    }
+}

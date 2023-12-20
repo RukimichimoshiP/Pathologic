@@ -1,0 +1,121 @@
+@keyframes animation{
+    20% {filter: none;}
+    30% {filter: grayscale(100%);}
+    40% {filter: none;}
+    50% {filter: grayscale(100%);}
+    90% {filter: none;}
+    100% {filter: grayscale(100%);}
+}
+@keyframes idle{
+    0%, 100% {transform: scale(1);}
+    50% {transform: scale(1.1);}
+}
+
+main{
+    height: 100%;
+    background-image: url('../media/img/background-pathologyc-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center left;
+}
+
+main #text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    z-index: 5;
+}
+main #text span{
+    font-size: 1.5em;
+    font-weight: 300;
+}
+main #text #uncover{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 110px;
+}
+main #text #img-right{
+    width: 100px;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(138deg) brightness(103%) contrast(100%);
+}
+
+main #text h1{
+    font-size: 2.5em;
+    overflow-wrap: break-word;
+}
+main #text #mysteries{
+    text-align: center;
+    max-width: 500px;
+}
+main #text #mysteries #button{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+main #text #mysteries button{
+    width: 45%;
+    height: 50px;
+    border-radius: 100px;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    transition: background 0.3s ease-out;
+    transition: font-size 0.1s ease-in
+}
+main #text #mysteries #Buy{
+    background-color: var(--red);
+    border: none;
+}
+main #text #mysteries #Buy:hover{
+    background-color: var(--red-select);
+    font-size: 1.1em;
+}
+main #text #mysteries #video{
+    background-color: var(--white-transparent);
+    backdrop-filter: blur(20px);
+    border: 1px solid white;
+}
+main #text #mysteries #video:hover{
+    background-color: rgba(255, 255, 255, 0.13);
+    font-size: 1.1em;
+}
+
+main #text #img-bottom{
+    display: block;
+    width: 95%;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(138deg) brightness(103%) contrast(100%);
+}
+
+main #imgs{
+    display: grid;
+    grid-template-areas: 
+    'bachelor haruspex'
+    'changelin changelin';
+    justify-items: center;
+    gap: 25px;
+    padding-bottom: 50px;
+}
+main #imgs div img{
+    width: 150px;
+    filter:  grayscale(100%);
+    animation: animation 3s infinite ease-in, idle 3s infinite ease-in-out;
+    transition: transform 0.5s ease-in;
+}
+main #imgs div img:hover{
+    transform: scale(1.2);
+    filter: saturate(100%);
+    animation: none;
+    box-shadow: 0 0 35px brown;
+}
+
+main #imgs #bachelor{
+    grid-area: bachelor;
+}
+main #imgs #haruspex{
+    grid-area: haruspex;
+}
+main #imgs #changelin{
+    grid-area: changelin;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/index.css">
+    <title>Pathologic Wki</title>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <button id="menu">
+                <div>
+                    Menu
+                    <img src="src/media/svg/menu.svg" alt="Menu">
+                </div>
+            </button>
+            <div id="logo">
+                <img src="src/media/svg/Site-logo.webp" alt="">
+            </div>
+        </div>
+        <nav class="hidden">
+            <ul>
+                <li>Home</li>
+                <li>Tradução</li>
+                <li>Notícias</li>
+            </ul>
+        </nav>
+        <button>Comprar Agora</button>
+    </header>
+
+    <main>
+        <div id="text">
+            <div id="uncover">
+                <span>Uncover the</span>
+                <img src="src/media/svg/right.png" alt="Right Row" id="img-right">
+            </div>
+            <div id="mysteries">
+                <h1>Mysteries of a Village in Despair.</h1>
+                <div id="button">
+                    <button id="Buy">Comprar Agora</button>
+                    <button id="video">Assistir o Trailer</button>
+                </div>
+                <img src="src/media/svg/bottom.png" alt="Bottom" id="img-bottom">
+            </div>
+        </div>
+
+        <section id="imgs">
+            <div id="bachelor"><img src="src/media/img/BachelorProfile.webp" alt="Bachelor"></div>
+            <div id="haruspex"><img src="src/media/img/HaruspexProfile.webp" alt="Haruspex"></div>
+            <div id="changelin"><img src="src/media/img/Changelingtrade.webp" alt="Changuelingtrade"></div>
+        </section>    
+    </main>
+    <section id="history">
+        <div id="img-game" class="translate-off">
+            <img src="src/media/img/image-pathologic.jpeg" alt="Cap Pathologic">
+        <div id="circle"><p>Clique aqui</p></div>
+    </div>
+
+        <div id="content-history" class="opacity-off">
+            <h1>Pathologic</h1>
+            <p>"Pathologic" é uma história contada por meio de três personagens geralmente conhecidos por seus títulos: o Bacharel (Бакалавр), o Harúspice (Гаруспик) e a Troca-peles (Самозванка). Cada um deles tenta descobrir a origem de uma estranha e letal doença conhecida como "praga da areia", que assolou uma pequena cidade. Os jogadores podem assumir o controle de cada um deles, e embora haja apenas uma história principal, cada personagem possui uma perspectiva diferente que pode fornecer ao jogador informações e insights que não tinham antes. A capacidade de descobrir alguns segredos depende do personagem que está sendo jogado, e os personagens também interagem com os outros dois personagens não escolhidos, discutindo seu progresso ao longo do jogo.</p>
+            <img src="src/media/svg/bottom.png" alt="Bottom Row">
+        </div>
+    </section>
+    <section id="persons" class="display-off">
+        <div id="content_persons">
+            <div id="image_person"><img src="src/media/img/BachelorProfile.webp" alt=""></div>
+            <div>
+                <p>Dankovsky é um Bacharel em medicina e um especialista em tanatologia. Ele lidera a Thanatica, um laboratório de pesquisa na Capital dedicado ao ambicioso objetivo de destruir a própria Morte. Seu trabalho o tornou uma celebridade e ele é renomado até mesmo entre os habitantes da Cidade. É evidente que sua pesquisa não apenas despertou admiração, mas também algum desagrado, já que há poderes que prefeririam vê-lo silenciosamente eliminado.</p>
+            </div>
+        </div>
+        <div id="navegation_persons">
+            <div id="bachelor" class="activate" onclick="ClickBachelor()"></div>
+            <div id="haruspex" class="" onclick="ClickHaruspex()"></div>
+            <div id="changelin" class="" onclick="ClickChangelin()"></div>
+        </div>
+
+        <div id="circle_back">Clique Aqui</div>
+    </section>
+
+    <script src="src/js/scripts.js"></script>
+</body>
+</html>

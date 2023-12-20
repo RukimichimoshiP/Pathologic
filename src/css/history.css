@@ -1,0 +1,86 @@
+@keyframes hidden{
+    50% {
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.hidden{
+    animation: hidden 2s;
+    display: none !important;
+}
+
+#history{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../media/img/background-history.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    padding: 25px;
+    gap: 25px;
+    transition: transform 2s linear;
+    
+}
+
+#history #img-game{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    transition: transform 2s linear;
+}
+.translate-off{
+    transform: translateX(-200%);
+}
+.translate-on{
+    transform: translateX(0%);
+}
+#history #img-game img{
+    width: 200px;
+    box-shadow: 0 0 45px var(--red);
+}
+#history #img-game #circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    border: 1px solid white;
+    border-radius: 50%;
+    background-color: var(--white-transparent);
+    backdrop-filter: blur(10px);
+    transition: all 0.5s ease-in;
+}
+#history #img-game #circle:hover{
+    background-color: rgba(0, 0, 0, 0.315);
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#history #content-history{
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    background-color: rgba(0, 0, 0, 0.267);
+    backdrop-filter: blur(10px);
+    transition: opacity 1s;
+}
+.opacity-off{
+    opacity: 0;
+}
+.opacity-on{
+    opacity: 1;
+}
+
+#history #content-history h1{
+    margin: 25px 0;
+}
+#history #content-history img{
+    width: 85%;
+    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(138deg) brightness(103%) contrast(100%);
+}
